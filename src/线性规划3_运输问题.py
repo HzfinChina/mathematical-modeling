@@ -28,15 +28,12 @@ np.array([1])
 def constructAeq():
     A = np.zeros((10,24),dtype=np.int8)
     # 定义a_i,i in 0到3
-    a_array_list = list();
+    a_array_list = [np.zeros((4,6))for i in range(4)]
     for i in range(4):
-        a_array_list.append(np.zeros((4,6)))
         a_array_list[i][i] = 1
     A = np.hstack(a_array_list)
     # 定义b_j,j in 0到5
-    b_array_list = list()
-    for i in range(4):
-        b_array_list.append(np.eye(6))
+    b_array_list = [np.eye(6)for i in range(4)]
     tempA = np.hstack(b_array_list)
     A = np.vstack((A, tempA))
     return A
