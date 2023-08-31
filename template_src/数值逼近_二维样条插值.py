@@ -25,4 +25,3 @@ y_new = np.linspace(-1,1,1000)
 z_new = func_new(x_new,y_new)
 
 ax2 = plt.subplot(1,2,2,projetion = '3d')
-surf2 = ax.plot

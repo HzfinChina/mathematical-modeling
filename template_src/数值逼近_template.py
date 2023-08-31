@@ -34,5 +34,3 @@ plt.plot(x_new,y_bspline,label="B-spline插值")
 # 显示label
 plt.legend()
 plt.show()
-
-
